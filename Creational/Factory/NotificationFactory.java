@@ -8,11 +8,11 @@ public class NotificationFactory {
             default -> throw new IllegalArgumentException("Unknown notification type: " + type);    
         };
     }
-    public static void main(String[] args) {
-        Notification smsNotification = NotificationFactory.createNotification("sms");
-        smsNotification.notifyUser();
+    // public static void main(String[] args) {
+    //     Notification smsNotification = NotificationFactory.createNotification("sms");
+    //     smsNotification.notifyUser();
         
-        Notification emailNotification = NotificationFactory.createNotification("email");
-        emailNotification.notifyUser();
-    }
+    //     Notification emailNotification = NotificationFactory.createNotification("email");
+    //     emailNotification.notifyUser();
+    // }
 }
